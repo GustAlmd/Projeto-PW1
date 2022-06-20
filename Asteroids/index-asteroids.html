@@ -1,0 +1,72 @@
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Arcade Game</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="../css/all.css">
+		<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="../css/aos.css">
+		<link rel="stylesheet" href="../css/Style.css">
+		<link rel="icon" href="../img/icon.png">
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<nav class="nav">
+			<div class="nav-menu flex-row">
+				<div class="nav-brand">
+					<a href="../index.html" class="text-gray">ArcadeGame</a>
+				</div>
+				<div class="toggle-collapse">
+					<div class="toggle-icons">
+						<i class="fas fa-bars"></i>
+					</div>
+				</div>
+				<div>
+					<ul class="nav-items">
+						<li class="nav-link">
+							<a href="../index.html">Home</a>
+						</li>
+						<li class="nav-link">
+							<a href="index-asteroids.html">Asteroids</a>
+						</li>
+						<li class="nav-link">
+							<a href="../Snake/index-snake.html">Snake</a>
+						</li>
+						<li class="nav-link">
+							<a href="../Menja/index-menja.html">Menja</a>
+						</li>
+						<li class="nav-link">
+							<a href="../Pacman/index-pacman.html">Pacman</a>
+						</li>
+						<li class="nav-link">
+                            <a href="../Jogo da Velha/index-jogo.html">Jogo da Velha</a>
+                        </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<main tabindex="0">
+				<canvas id="gameCanvas" width="700" height="500"></canvas>
+			</main>
+				<div id="instructions">
+					<div class="commands"><kbd><i class="fas fa-arrow-up" aria-hidden="true" aria-label="up arrow key"></i></kbd>impulsionar a nave</div>
+					<div class="commands"><kbd><i class="fas fa-arrow-left" aria-hidden="true" aria-label="left arrow key"></i></kbd><kbd><i class="fas fa-arrow-right" aria-hidden="true" aria-label="right arrow key"></i></kbd>Mover a nave</div>
+					<div class="commands"><kbd>espaço</kbd>disparar lasers</div>
+				</div>
+				<div class="volume">
+					<i id="music" class="fas fa-music mute" aria-hidden="true" aria-label="sound off"></i>
+					<div id="sound"><i class="fas fa-volume-mute" aria-hidden="true" aria-label="sound off"></i></div>
+				</div>
+				<p id="alert">Desculpe, você não pode jogar esse jogo no celular ou tablet...</p>
+		</main>
+			<script src="javascript.js"></script>
+			<script src="../js/aos.js"></script>
+			<script src="../js/Jquery3.4.1.min.js"></script>
+			<script src="../js/main.js"></script>
+	</body>
+</html>

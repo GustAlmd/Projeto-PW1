@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Game</title>
+    <link rel="stylesheet" href="style-menja.css">
+    <link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../css/aos.css">
+	<link rel="stylesheet" href="../css/Style.css">
+	<link rel="icon" href="../img/icon.png">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="../index.html" class="text-gray">ArcadeGame</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../Asteroids/index-asteroids.html">Asteroids</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../Snake/index-snake.html">Snake</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="index-menja.html">Menja</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../Pacman/index-pacman.html">Pacman</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../Jogo da Velha/index-jogo.html">Jogo da Velha</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <canvas id="c"></canvas>
+        <div class="hud">
+        <div class="hud__score">
+            <div class="score-lbl"></div>
+            <div class="cube-count-lbl"></div>
+        </div>
+        <div class="pause-btn"><div></div></div>
+        <div class="slowmo">
+            <div class="slowmo__bar"></div>
+        </div>
+        </div>
+        <div class="menus">
+        <div class="menu menu--main">
+            <h1>MENJA</h1>
+            <button type="button" class="play-normal-btn">COMEÇAR</button>
+            <button type="button" class="play-casual-btn">TREINO</button>
+        </div>
+        <div class="menu menu--pause">
+            <h1>PAUSADO</h1>
+            <button type="button" class="resume-btn">CONTINUAR</button>
+            <button type="button" class="menu-btn--pause">VOLTAR MENU</button>
+        </div>
+        <div class="menu menu--score">
+            <h1>Game Over</h1>
+            <h2>Seu Score:</h2>
+            <div class="final-score-lbl"></div>
+            <div class="high-score-lbl"></div>
+            <button type="button" class="play-again-btn">JOGAR DENOVO</button>
+            <button type="button" class="menu-btn--score">VOLTAR MENU</button>
+        </div>
+        </div>
+    </main>
+    <script src="js-menja.js"></script>
+    <script src="../js/aos.js"></script>
+	<script src="../js/Jquery3.4.1.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>

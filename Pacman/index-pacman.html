@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Arcade Game</title>
+    <link rel="stylesheet" href="style-pacman.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="icon" href="../img/icon.png">
+</head>
+<body class="pacman">
+  <nav class="nav">
+    <div class="nav-menu flex-row">
+        <div class="nav-brand">
+            <a href="../index.html" class="text-gray">ArcadeGame</a>
+        </div>
+        <div class="toggle-collapse">
+            <div class="toggle-icons">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div>
+            <ul class="nav-items">
+                <li class="nav-link">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="../Asteroids/index-asteroids.html">Asteroids</a>
+                </li>
+                <li class="nav-link">
+                    <a href="../Snake/index-snake.html">Snake</a>
+                </li>
+                <li class="nav-link">
+                    <a href="../Menja/index-menja.html">Menja</a>
+                </li>
+                <li class="nav-link">
+                  <a href="index-pacman.html">Pacman</a>
+                </li>
+                <li class="nav-link">
+                    <a href="../Jogo da Velha/index-jogo.html">Jogo da Velha</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <main>
+    <div id="shim">shim for font face</div>
+    <h1>Pacman</h1>
+    <div id="pacman"></div>
+  </main>
+  <script src="pacman.js"></script>
+  <script src="modernizr-1.5.min.js"></script>
+  <script>
+    var el = document.getElementById("pacman");
+    if (Modernizr.canvas && Modernizr.localstorage && 
+        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
+      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+    } else { 
+      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
+        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
+    }
+  </script>
+  <script src="../js/aos.js"></script>
+	<script src="../js/Jquery3.4.1.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>
